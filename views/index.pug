@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+	section.namecard
+		include includes/greeting.pug
+		h1.namecard-prompt Let's get started
+		form(action='/cards', method='get')
+			button.namecard-submit(type='submit') Begin!

@@ -1,0 +1,40 @@
+extends layout.pug
+
+
+block content 
+	section.namecard
+		include includes/greeting
+	section.flashcards
+	if(side=='question')
+		.card.card-question
+			.card-header
+			h1.card-title #{text}
+			#content
+				h2= qa
+				if(hint)
+					p#hint 
+						i Hint: #{hint} 
+			.card-flip-wrap
+				a(href=`${id}?side=${sideShow}`)
+					img.card-flip(src='/static/img/flip.svg')
+			.card-next
+				a(href='/cards')
+					img(src='/static/img/next.svg')
+	else 
+		.card.card-answer
+			.card-header
+			h1.card-title #{text}
+			#content
+				h2= qa
+				if(hint)
+					p#hint 
+						i Hint: #{hint} 
+			.card-flip-wrap
+				a(href=`${id}?side=${sideShow}`)
+					img.card-flip(src='/static/img/flip.svg')
+			.card-next
+				a(href='/cards')
+					img(src='/static/img/next.svg')
+	
+	
+

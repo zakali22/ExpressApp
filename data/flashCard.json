@@ -1,0 +1,22 @@
+{
+	"data": {
+		"title": "Flash QA",
+		"cards": [
+			{
+				"question": "Who is the 42nd President of the US?",
+				"answer": "Bill Clinton",
+				"hint": "Initials are BC"
+			},
+			{
+				"question": "What is the Capital of the UAE?",
+				"answer": "Abu Dhabi",
+				"hint": "Its not Dubai"
+			},
+			{
+				"question": "Where is Belize?",
+				"answer": "South America",
+				"hint": "South"				
+			}
+		]
+	}
+}
